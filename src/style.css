@@ -1,0 +1,12 @@
+#button_container{
+    font-size: 20px;
+    position: fixed;
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 5px;
+}
+
+#counter_container{
+    margin-top: 50px;
+    border: 1px black solid;
+}
