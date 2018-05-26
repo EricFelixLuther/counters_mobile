@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Custom Counters</title>
-    <style type="stylesheet/css" href="style.css"></style>
-    <script type="text/javascript" src="jquery-3.2.1.js"></script>
-    <script type="text/javascript" src="add_counter.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Custom Counters</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="add_counter.js"></script>
 </head>
-<body>
-<div id="button_container">
-    <input id="add_counter" type="button" value="+"/>
-</div>
-<div id="counter_container"></div>
 
+<body class="text-light bg-dark">
+  <div class="row">
+    <div class="col">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">New counter name</span>
+        </div>
+        <input id="new_name" class="form-control" type="text" />
+        <div class="input-group-append">
+          <button id="add_counter" class="btn btn-primary" type="button">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div id="counter_container" class="container-fluid"></div>
+
+  <div id="hidden_tmp">
+    <div class="row">
+      <div class="col-auto col-sm-2">
+        <button class="btn btn-danger" operation="substract" type="button">-</button>
+      </div>
+      <div class="col-auto col-sm-8 btn-group-vertical">
+          <span class="btn btn-light" placeholder="name"></span>
+          <span class="btn btn-primary btn-lg" placeholder="counter">0</span>
+      </div>
+      <div class="col-auto col-sm-2">
+        <button class="btn btn-success" operation="add" type="button">+</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
